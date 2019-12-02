@@ -1,0 +1,329 @@
+/*index*/
+#index_body {
+  height: 100vh;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .title {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .select_level {
+    width: 90%;
+  }
+}
+
+.select_level button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+  margin-bottom: 35px;
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.select_level button:focus {
+  outline: none;
+}
+
+@media only screen and (max-width: 480px) {
+  .select_level button {
+    width: 100%;
+  }
+}
+
+.select_level #beginner {
+  border-color: #8d01ff;
+  color: #8d01ff;
+}
+
+.select_level #beginner:hover {
+  border: none;
+  background-color: rgba(141, 1, 255, 0.7);
+  color: #fff;
+}
+
+.select_level #easy {
+  border-color: #0166ff;
+  color: #0166ff;
+}
+
+.select_level #easy:hover {
+  border: none;
+  background-color: rgba(1, 102, 255, 0.7);
+  color: #fff;
+}
+
+.select_level #middle {
+  border-color: rgba(47, 255, 19, 0.788);
+  color: rgba(47, 255, 19, 0.788);
+}
+
+.select_level #middle:hover {
+  border: none;
+  background-color: rgba(47, 255, 19, 0.7);
+  color: #fff;
+}
+
+.select_level #difficult {
+  border-color: #ffa52e;
+  color: #ffa52e;
+}
+
+.select_level #difficult:hover {
+  border: none;
+  background-color: rgba(255, 165, 46, 0.7);
+  color: #fff;
+}
+
+.select_level #expert {
+  border-color: #ff6868;
+  color: #ff6868;
+}
+
+.select_level #expert:hover {
+  border: none;
+  background-color: rgba(255, 104, 104, 0.7);
+  color: #fff;
+}
+
+/*question*/
+.question {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "M PLUS Rounded 1c";
+}
+
+@media only screen and (max-width: 480px) {
+  .question {
+    font-size: 18px;
+  }
+}
+
+.option-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+  .option-container {
+    width: 90%;
+  }
+}
+
+.option {
+  display: block;
+  width: 400px;
+  height: 40px;
+  border: 1px solid #3b69ff;
+  border-radius: 20px;
+  font-size: 18px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  margin: 40px auto 40px;
+  background-color: #3b69ff;
+  color: #fff;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .option {
+    width: 100%;
+  }
+}
+
+/*answer*/
+.answer {
+  margin-top: 100px;
+  text-align: center;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.each-answer {
+  width: 700px;
+  padding: 15px;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 780px) {
+  .each-answer {
+    width: 90%;
+  }
+}
+
+.correct {
+  border-left: 5px solid #2bff9c;
+}
+
+.wrong {
+  border-left: 5px solid #ff6767;
+}
+
+.ans-q {
+  font-family: "M PLUS Rounded 1c";
+}
+
+.correct-sentence {
+  margin-top: 10px;
+  font-family: "M PLUS Rounded 1c";
+}
+
+.correct-blue {
+  color: #092eff;
+}
+
+.translation {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  margin-bottom: 30px;
+}
+
+.comment-title, .answer-title, .choice-title {
+  width: 100px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -18px;
+  background-color: #fff;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.comment {
+  margin-bottom: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, "M PLUS Rounded 1c";
+}
+
+.choice-title {
+  width: 150px;
+}
+
+.choice {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif, "M PLUS Rounded 1c";
+}
+
+.wrong-red {
+  color: #e23737;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn-container {
+  width: 700px;
+  height: 110px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media only screen and (max-width: 780px) {
+  .btn-container {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .btn-container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.again {
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 1px solid rgba(25, 152, 255, 0.938);
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  background-color: rgba(25, 152, 255, 0.938);
+  color: #fff;
+}
+
+.again:focus {
+  outline: none;
+}
+
+.menu {
+  display: block;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #ff26db;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ff26db;
+  color: #fff;
+}
+
+.menu:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
